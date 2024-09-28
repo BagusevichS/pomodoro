@@ -6,12 +6,12 @@ import 'clock_dial_painter.dart';
 
 class CustomCircularProgressIndicator extends StatelessWidget {
   final String? selectedTaskId;
-  const CustomCircularProgressIndicator({super.key, this.selectedTaskId});
+  final TaskProvider? taskProvider;
+  const CustomCircularProgressIndicator({super.key, this.selectedTaskId, this.taskProvider});
 
   @override
   Widget build(BuildContext context) {
     final timerProvider = Provider.of<TimerProvider>(context);
-    final taskProvider = Provider.of<TaskProvider>(context);
     double width = MediaQuery.of(context).size.width;
 
     return GestureDetector(

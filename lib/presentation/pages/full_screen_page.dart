@@ -39,6 +39,9 @@ class _FullScreenPageState extends State<FullScreenPage> {
         backgroundColor: Colors.black,
 
         body: SafeArea(
+          bottom: false,
+          left: false,
+          right: false,
           child: Stack(
             children: [
               Row(

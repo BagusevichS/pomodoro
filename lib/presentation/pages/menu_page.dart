@@ -32,6 +32,7 @@ class _MenuPageState extends State<MenuPage> {
       ),
       backgroundColor: Colors.white,
       body: SafeArea(
+        bottom: false,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: width / 25),
           child: Column(

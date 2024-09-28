@@ -171,6 +171,7 @@ class _MainPageState extends State<MainPage> {
                   Column(children: [
                     CustomCircularProgressIndicator(
                       selectedTaskId: selectedTaskId, // Передаем выбранную задачу в индикатор
+                      taskProvider: taskProvider,
                     ),
                     SizedBox(
                       height: heigth / 10,

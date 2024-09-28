@@ -5,7 +5,7 @@ import 'package:pomodoro/presentation/pomodoro_app.dart';
 void main() {
   runApp(const PomodoroApp());
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    systemNavigationBarColor: Colors.transparent,
+    systemNavigationBarColor: Colors.black,
     systemNavigationBarIconBrightness: Brightness.light,
     statusBarColor: Colors.transparent,
     statusBarIconBrightness: Brightness.light,

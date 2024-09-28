@@ -23,6 +23,7 @@ class TaskRepositoryImpl implements TaskRepository {
       'completed': task.completed
     }));
     await sharedPreferences.setStringList('tasks', taskList);
+
   }
 
   @override

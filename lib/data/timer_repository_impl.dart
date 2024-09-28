@@ -27,7 +27,7 @@ class TimerRepositoryImpl implements TimerRepository {
           timerEntity.totalTime = 5 * 60;
           timerEntity.remainingTime = 5 * 60;
           if (selectedTaskId != null) {
-            final selectedTask = taskProvider!.tasks.firstWhere((task) => task.taskId == selectedTaskId);
+            final selectedTask = taskProvider!.tasks.firstWhere((task) => task.taskId.toString() == selectedTaskId);
             taskProvider.incrementTomato(selectedTask);
           }
         } else if (timerEntity.totalTime == 5 * 60) {
